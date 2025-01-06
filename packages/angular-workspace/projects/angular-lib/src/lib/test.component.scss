@@ -1,0 +1,14 @@
+// No issue using a lib from the same Yarn workspace
+@import "scss-lib/scss/mixins";
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+:host {
+  // from scss-lib
+  @include red();
+
+  // from bootstrap
+  background: $red;
+}

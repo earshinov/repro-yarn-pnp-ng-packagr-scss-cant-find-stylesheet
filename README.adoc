@@ -1,0 +1,6 @@
+= repro-yarn-pnp-ng-packagr-scss-cant-find-stylesheet
+:nofooter:
+
+Repro project for https://github.com/ng-packagr/ng-packagr/issues/2967["Can't find stylesheet to import" when using Yarn PnP under Windows · Issue #2967 · ng-packagr/ng-packagr].
+
+See https://github.com/earshinov/repro-yarn-pnp-ng-packagr-scss-cant-find-stylesheet/actions/[GitHub actions].  The problem is that bootstrap scss imports in link:packages/angular-workspace/projects/angular-lib/src/lib/test.component.scss[] produce the "Can't find stylesheet to import" error under Windows (but not under Linux) and Yarn PNP (but not with `nodeLinker: node-modules`).
